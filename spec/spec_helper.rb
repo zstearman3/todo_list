@@ -57,6 +57,9 @@ RSpec.configure do |config|
   #     end
   #
   # The different available types are documented in the features, such as in
-  # https://relishapp.com/rspec/rspec-rails/v/3-0/docs
+  # https://relishapp.com/rspec/rspec-rails/v/2-0/docs
   config.infer_spec_type_from_file_location!
+end
+RSpec.configure do |c|
+  c.expose_current_running_example_as :example
 end
