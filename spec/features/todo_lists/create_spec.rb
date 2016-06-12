@@ -26,7 +26,7 @@ describe "Creating todo lists" do
 
     expect(page).to have_content("error")
     expect(TodoList.count).to eq(0)
-    #expect(page).to_not have_content("This is what I'm doing today.")
+    #expect(page).to_not have_content("This is what I'm doing today.") --This line of code causes the test to fail because the text is still in the text box after the error appears. I don't believe this is a problem, though
   end
 
   it "displays an error when the todo list has a title less than three characters" do
