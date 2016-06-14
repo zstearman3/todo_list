@@ -25,9 +25,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
-  gem 'rspec-activemodel-mocks'
+  gem 'rspec-activemodel-mocks', '~> 1.0'
 end
 
 group :test do
   gem 'capybara', '~> 2.7.0'
+  gem 'shoulda-matchers', '~> 3.1.0'
 end
