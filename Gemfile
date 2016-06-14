@@ -25,6 +25,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-activemodel-mocks'
 end
 
 group :test do
